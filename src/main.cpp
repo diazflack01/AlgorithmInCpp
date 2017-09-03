@@ -3,14 +3,11 @@
 #include <algorithm>
 #include <set>
 
+#include "codeWars/kyu8/MakeUpperCase.hpp"
+
 int main()
 {
-	std::vector<unsigned> v{1,2,3,4,5};
-	std::transform(v.rbegin(), v.rend(), v.begin(), [](auto i){ return i; });
-	for(auto&& c : v)
-	{
-		std::cout << c << " "	;
-	}
-	std::cout << std::endl;
+	std::cout << codeWars::kyu8::MakeUpperCase::makeUpperCase("hello") << std::endl;
+	std::cout << codeWars::kyu8::MakeUpperCase::makeUpperCase("hello123") << std::endl;
 	return 0;
 }

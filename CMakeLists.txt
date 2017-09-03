@@ -1,5 +1,5 @@
 message("=====================================================")
-message("===== Start CMakeLists.txt on Practice_Projects =====")
+message("===== Start CMakeLists.txt on AlgorithmCpp =====")
 message("=====================================================")
 
 # cmake version

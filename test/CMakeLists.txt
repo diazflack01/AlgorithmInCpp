@@ -6,9 +6,13 @@ find_package(Threads REQUIRED)
 
 enable_testing()
 
-#main.cpp test file
-file(GLOB TEST_SRC_MAIN_FILES main.cpp)
-set(PROJECT_TEST_NAME "${PROJECT_NAME}_test")
-add_executable(${PROJECT_TEST_NAME} ${TEST_SRC_MAIN_FILES})
-add_dependencies(${PROJECT_TEST_NAME} gtest gtest_main gmock gmock_main)
-target_link_libraries(${PROJECT_TEST_NAME} gtest gtest_main gmock gmock_main ${CMAKE_THREAD_LIBS_INIT})
+include_directories("${PROJECT_SOURCE_DIR}/test/" "${PROJECT_SOURCE_DIR}/src/")
+
+#### CodeWars ####
+set(CODEWARS_TEST "CodeWarsTest")
+file(GLOB CODEWARS_SRC_FILES "${PROJECT_SOURCE_DIR}/src/codeWars/kyu8/*.cpp")
+add_executable(${CODEWARS_TEST} main.cpp ${CODEWARS_SRC_FILES})
+add_dependencies(${CODEWARS_TEST} gtest gtest_main gmock gmock_main)
+target_link_libraries(${CODEWARS_TEST} gtest gtest_main gmock gmock_main ${CMAKE_THREAD_LIBS_INIT})
+
+

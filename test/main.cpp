@@ -1,5 +1,7 @@
 #include "gtest/gtest.h"
 
+#include "codeWars/kyu8/MakeUpperCaseTest.cpp"
+
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc, argv);
