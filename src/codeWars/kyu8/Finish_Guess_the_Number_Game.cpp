@@ -1,5 +1,7 @@
 #include "Finish_Guess_the_Number_Game.hpp"
 
+#include <exception>
+
 namespace codeWars {
 namespace kyu8 {
 
@@ -10,14 +12,14 @@ Guesser::Guesser(int number, int lives)
 
 bool Guesser::guess(int n)
 {
-	while (mLives-- > 0)
+	if (mLives <= 0)
 	{
-		if (n == mNumber)
-		{
-			return true;
-		}
+		throw std::exception();
 	}
-	return false;
+	else
+	{
+		return (mLives-- > 0 && n == mNumber) ? true : false;
+	}
 }
 
 }
