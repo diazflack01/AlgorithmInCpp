@@ -6,6 +6,8 @@
 #include <codeWars/kyu8/How_much_i_love_youTest.cpp>
 #include <codeWars/kyu8/Evil_or_OdiousTest.cpp>
 
+#include <codeWars/kyu7/All_InclusiveTest.cpp>
+
 int main(int argc, char **argv)
 {
     testing::InitGoogleTest(&argc, argv);
