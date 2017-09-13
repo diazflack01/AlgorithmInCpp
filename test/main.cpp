@@ -7,6 +7,10 @@
 #include <codeWars/kyu8/Evil_or_OdiousTest.cpp>
 
 #include <codeWars/kyu7/All_InclusiveTest.cpp>
+#include <codeWars/kyu7/Scaling_Squared_StringsTest.cpp>
+#include <codeWars/kyu7/Composing_squared_stringsTest.cpp>
+#include <codeWars/kyu7/Sum_of_two_lowest_positive_integersTest.cpp>
+#include <codeWars/kyu7/Maximum_Length_DifferenceTest.cpp>
 
 int main(int argc, char **argv)
 {
